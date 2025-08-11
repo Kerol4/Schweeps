@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Regjistrohu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    footer {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.PNG" alt="Logo" width="200" height="60" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Portali</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Rreth nesh</a></li>
+          <li class="nav-item"><a class="nav-link" href="ndikimi.html">Ndikimi</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Info -->
+  <div class="container text-center my-4">
+    <p>
+      Nëse dëshironi të njoftoheni rreth të rejave të fundit ju lutem plotësoni këtë formular.
+    </p>
+  </div>
+
+  <!-- Form + Contact -->
+  <div class="container mb-5">
+    <div class="row g-4">
+      <!-- Form -->
+      <div class="col-md-6">
+        <div class="card shadow-sm p-4 rounded-4">
+          <h5 class="mb-4 text-center">Formular</h5>
+
+          <div class="alert alert-success d-none" id="successMessage">
+            Të dhënat u regjistruan me sukses!
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Emri</label>
+              <input type="text" class="form-control" id="name" placeholder="Shkruani emrin tuaj" required />
+              <div class="invalid-feedback">Ju lutem shkruani emrin tuaj.</div>
+            </div>
+            <div class="mb-3">
+              <label for="surname" class="form-label">Mbiemri</label>
+              <input type="text" class="form-control" id="name" placeholder="Shkruani mbiemrin tuaj" required />
+              <div class="invalid-feedback">Ju lutem shkruani mbiemrin tuaj.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Shkruani emailin tuaj" required />
+              <div class="invalid-feedback">Ju lutem vendosni një email të saktë.</div>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-dark">Dërgo</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-6">
+        <div class=" p-4 h-100">
+          <h5 class="mb-4 text-center">Na kontaktoni</h5>
+          <ul >
+            <li class="mb-3 d-flex align-items-start">
+              <span class="me-3 fs-5">📧</span>
+              <div>
+                <strong>Email:</strong><br />
+                info@cocacola.al
+              </div>
+            </li>
+            <li class="mb-3 d-flex align-items-start">
+              <span class="me-3 fs-5">📞</span>
+              <div>
+                <strong>Cel:</strong><br />
+                +355 45 606 060
+              </div>
+            </li>
+            <li class="mb-3 d-flex align-items-start">
+              <span class="me-3 fs-5">📍</span>
+              <div>
+                <strong>Adresa:</strong><br />
+                Coca‑Cola Bottling Shqipëria Rruga Kombëtare Tiranë-Durrës km 5, Kashar, Tirana
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div class="container mb-5">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.029579159435!2d19.750982775203724!3d41.35171079820866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13502e1ec884a51d%3A0xa662329bf641f90f!2sCoca-Cola%20Bottling%20Shqip%C3%ABria!5e0!3m2!1sen!2s!4v1754510067666!5m2!1sen!2s"  
+      height="300" 
+      style="border:0;" 
+      allowfullscreen="" 
+      class="w-100"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p style="color: white;">© <span id="currentYear"></span> The Coca-Cola Company. Të gjitha të drejtat të rezervuara.</p>
+  </footer>
+
+  <!-- Bootstrap & JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Form Validation Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById('contactForm');
+      const successMessage = document.getElementById('successMessage');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (form.checkValidity()) {
+          // Nëse është valid, fshih formën dhe shfaq mesazhin
+          form.classList.remove('was-validated');
+          form.reset();
+          successMessage.classList.remove('d-none');
+        } else {
+          form.classList.add('was-validated');
+          successMessage.classList.add('d-none');
+        }
+      });
+
+      // Vendos vitin automatikisht
+      const yearSpan = document.getElementById("currentYear");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+
+</body>
+</html>

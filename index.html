@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .hero img {
+      max-width: 150px;
+    }
+    .hero-description {
+      margin-top: 20px;
+      font-size: 1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    footer {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: white;
+    }
+    .nutrition-box {
+      display: none;
+      margin-top: 10px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background-color: #fff8f8;
+      border-radius: 6px;
+    }
+    .nutrition-box table {
+      width: 100%;
+      margin-bottom: 10px;
+      border-collapse: collapse;
+    }
+    .nutrition-box th,
+    .nutrition-box td {
+      text-align: left;
+      padding: 5px;
+      border-bottom: 1px solid #eee;
+    }
+    .btn-outline-dark {
+      color: black;
+      border-color: black;
+    }
+    .btn-outline-dark:hover,
+    .btn-outline-dark:focus {
+      background-color: black;
+      color: white;
+      border-color: black;
+    }
+    body{
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.PNG" alt="Logo" width="200" height="60" class="d-inline-block align-text-top" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Portali</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Rreth nesh</a></li>
+          <li class="nav-item"><a class="nav-link" href="ndikimi.html">Ndikimi</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="text-center margin-bottom-3rem">
+    <img src="fushata1.png" alt="fushata1" class="img-fluid" />
+    <div class="container text-center py-4">
+      <h1 style="margin-bottom: 50px;">Mësoni më shumë rreth Schweppes</h1>
+      <p class="hero-description">
+        Schweppes është brandi ikonë ndërkombëtar për ujërat tonike. Zbuloni variantet Bitter Lemon, Indian Tonic, Pink Mixer Style dhe Soda Water​.
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="container py-5">
+    <!-- Row 1 me tekst pak më poshtë -->
+    <div class="row mb-4">
+      <div class="col-md-5 mb-3 mb-md-0">
+        <img src="pink_mixer.PNG" class="img-fluid" alt="pink_mixer" />
+      </div>
+      <div class="col-md-7 d-flex flex-column  align-items-center">
+        <p class="mb-0" style="margin-top: 0px;">
+          <h3>Schweppes Pink Mixer Style 330ml</h3>
+          Pije joalkoolike me sheqer dhe ëmbëlsues.
+        </p>
+        <button class="btn btn-outline-dark toggle-btn mt-0" type="button">Shiko faktet ushqyese ▼</button>
+        <div class="nutrition-box">
+          <h5>Vlera Ushqimore</h5>
+          <table>
+            <thead>
+              <tr><th>Formatet</th><th>per 100 ml</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Vlera energjike</td><td>89 kJ / 21 kcal</td></tr>
+              <tr><td>Yndyrna</td><td>0 g</td></tr>
+              <tr><td>Yndyrna të ngopura</td><td>0 g</td></tr>
+              <tr><td>Karbohidrate</td><td>4.8 g</td></tr>
+              <tr><td>Sheqerna</td><td>4.8 g</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top: 0px; margin-bottom: 0px;"><strong>Përbërësit:</strong> ujë, sheqer, dioksid karboni, acid: acid citrik, aromatizues, konservues: benzoat natriumi, ëmbëlsues: sakarinë dhe aspartam, ngjyrë: antocianinë. Vlera energjike për 330 ml: 281 kJ / 66 kcal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="container py-5">
+  <div class="row align-items-start mb-4">
+    <!-- Teksti në krahun e majtë -->
+    <div class="col-md-7 d-flex flex-column align-items-center order-1 order-md-0">
+      <p class="mb-0 mt-0s">
+        <h3>Schweppes Indian Tonic 150ml</h3>
+        Schweppes është brandi ikonë ndërkombëtare për ujërat tonike. Zbuloni Indian Tonic.
+      </p>
+      <button class="btn btn-outline-dark toggle-btn mt-0" type="button">Shiko faktet ushqyese ▼</button>
+      <div class="nutrition-box mt-3" style="display:none;">
+        <h5>Vlera Ushqimore</h5>
+        <table >
+          <thead>
+            <tr><th>Formatet</th><th>per 100 ml</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Vlera energjike</td><td>156 kJ / 37 kcal</td></tr>
+            <tr><td>Yndyrna</td><td>0 g</td></tr>
+            <tr><td>Yndyrna të ngopura</td><td>0 g</td></tr>
+            <tr><td>Karbohidrate</td><td>8.9 g</td></tr>
+            <tr><td>Sheqerna</td><td>8.9 g</td></tr>
+          </tbody>
+        </table>
+        <p class="mb-0"><strong>Përbërësit:</strong> ujë, sheqer, dioksid karboni, acidifikues: acid citrik, aromatizues (përfshirë kininën), konservues: sorbat kaliumi. Vlera energjike për 150 ml: 234 kj / 56 kcal </p>
+      </div>
+    </div>
+    <div class="col-md-5 mb-3 mb-md-0 order-0 order-md-1">
+      <img src="indian_tonic_150.PNG" class="img-fluid" alt="indian_tonic_150" />
+    </div>
+  </div>
+</section>
+<section class="container py-5">
+    <!-- Row 1 me tekst pak më poshtë -->
+    <div class="row mb-4">
+      <div class="col-md-5 mb-3 mb-md-0">
+        <img src="indian_tonic_330.PNG" class="img-fluid" alt="indian_tonic_330" />
+      </div>
+      <div class="col-md-7 d-flex flex-column  align-items-center">
+        <p class="mb-0" style="margin-top: 0px;">
+          <h3>Schweppes Indian Tonic 330ml</h3>
+          Schweppes është brandi ikonë ndërkombëtare për ujërat tonike. Zbuloni Indian Tonic.
+        </p>
+        <button class="btn btn-outline-dark toggle-btn mt-0" type="button">Shiko faktet ushqyese ▼</button>
+        <div class="nutrition-box">
+          <h5>Vlera Ushqimore</h5>
+          <table>
+            <thead>
+              <tr><th>Formatet</th><th>per 100 ml</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Vlera energjike</td><td>156 kJ / 37 kcal</td></tr>
+              <tr><td>Yndyrna</td><td>0 g</td></tr>
+              <tr><td>Yndyrna të ngopura</td><td>0 g</td></tr>
+              <tr><td>Karbohidrate</td><td>8.9 g</td></tr>
+              <tr><td>Sheqerna</td><td>8.9 g</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top: 0px; margin-bottom: 0px;"><strong>Përbërësit:</strong>Përbërësit: ujë, sheqer, dioksid karboni, acidifikues: acid citrik, aromatizues (përfshirë kininën), konservues: sorbat kaliumi. Vlera energjike për 330 ml: 515 kj / 122 kcal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="container py-5">
+  <div class="row align-items-start mb-4">
+    <!-- Teksti në krahun e majtë -->
+    <div class="col-md-7 d-flex flex-column align-items-center order-1 order-md-0">
+      <p class="mb-0 mt-0s">
+        <h3>Schweppes Indian Tonic 750ml</h3>
+        Schweppes është brandi ikonë ndërkombëtare për ujërat tonike. Zbuloni Indian Tonic.
+      </p>
+      <button class="btn btn-outline-dark toggle-btn mt-0" type="button">Shiko faktet ushqyese ▼</button>
+      <div class="nutrition-box mt-3" style="display:none;">
+        <h5>Vlera Ushqimore</h5>
+        <table >
+          <thead>
+            <tr><th>Formatet</th><th>per 100 ml</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Vlera energjike</td><td>156 kJ / 37 kcal</td></tr>
+            <tr><td>Yndyrna</td><td>0 g</td></tr>
+            <tr><td>Yndyrna të ngopura</td><td>0 g</td></tr>
+            <tr><td>Karbohidrate</td><td>8.9 g</td></tr>
+            <tr><td>Sheqerna</td><td>8.9 g</td></tr>
+          </tbody>
+        </table>
+        <p class="mb-0"><strong>Përbërësit:</strong> ujë, sheqer, dioksid karboni, acidifikues: acid citrik, aromatizues (përfshirë kininën), konservues: sorbat kaliumi. Vlera energjike për 250 ml: 390 kj / 93 kcal </p>
+      </div>
+    </div>
+    <div class="col-md-5 mb-3 mb-md-0 order-0 order-md-1">
+      <img src="indian_tonic_750.PNG" class="img-fluid" alt="indian_tonic_750" />
+    </div>
+  </div>
+</section>
+<section class="container py-5">
+    <!-- Row 1 me tekst pak më poshtë -->
+    <div class="row mb-4">
+      <div class="col-md-5 mb-3 mb-md-0">
+        <img src="bitter_lemon_330.PNG" class="img-fluid" alt="bitter_lemon_330" />
+      </div>
+      <div class="col-md-7 d-flex flex-column  align-items-center">
+        <p class="mb-0" style="margin-top: 0px;">
+          <h3>Schweppes Bitter Lemon 330ml</h3>
+          Schweppes është brandi ikonë ndërkombëtare për ujërat tonike. Zbuloni Bitter Lemon.
+        </p>
+        <button class="btn btn-outline-dark toggle-btn mt-0" type="button">Shiko faktet ushqyese ▼</button>
+        <div class="nutrition-box">
+          <h5>Vlera Ushqimore</h5>
+          <table>
+            <thead>
+              <tr><th>Formatet</th><th>per 100 ml</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Vlera energjike</td><td>221 kJ / 52 kcal</td></tr>
+              <tr><td>Yndyrna</td><td>0 g</td></tr>
+              <tr><td>Yndyrna të ngopura</td><td>0 g</td></tr>
+              <tr><td>Karbohidrate</td><td>12.6 g</td></tr>
+              <tr><td>Sheqerna</td><td>12.6 g</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top: 0px; margin-bottom: 0px;"><strong>Përbërësit:</strong> ujë, sheqer, lëng limoni 2,6% nga koncentrati, dioksid karboni, acidifikues: acid citrik, aromatizues (përfshirë kininën), konservues: sorbat kaliumi, antioksidues: acid askorbik, stabilizues: E 445, ngjyrues: karoten.Vlera energjike për 330ml: 729 kj / 172 kcal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="container py-5">
+  <div class="row align-items-start mb-4">
+    <!-- Teksti në krahun e majtë -->
+    <div class="col-md-7 d-flex flex-column align-items-center order-1 order-md-0">
+      <p class="mb-0 mt-0s">
+        <h3>Schweppes Bitter Lemon 750ml</h3>
+        Schweppes është brandi ikonë ndërkombëtare për ujërat tonike. Zbuloni Bitter Lemon.
+      </p>
+      <button class="btn btn-outline-dark toggle-btn mt-0" type="button">Shiko faktet ushqyese ▼</button>
+      <div class="nutrition-box mt-3" style="display:none;">
+        <h5>Vlera Ushqimore</h5>
+        <table >
+          <thead>
+            <tr><th>Formatet</th><th>per 100 ml</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Vlera energjike</td><td>221 kJ / 52 kcal</td></tr>
+            <tr><td>Yndyrna</td><td>0 g</td></tr>
+            <tr><td>Yndyrna të ngopura</td><td>0 g</td></tr>
+            <tr><td>Karbohidrate</td><td>12.6 g</td></tr>
+            <tr><td>Sheqerna</td><td>12.6 g</td></tr>
+          </tbody>
+        </table>
+        <p class="mb-0"><strong>Përbërësit:</strong> ujë, sheqer, lëng limoni 2,6% nga koncentrati, dioksid karboni, acidifikues: acid citrik, aromatizues (përfshirë kininën), konservues: sorbat kaliumi, antioksidues: acid askorbik, stabilizues: E 445, ngjyrues: karoten.Vlera energjike për 250ml: 553 kj / 130 kcal. </p>
+      </div>
+    </div>
+    <div class="col-md-5 mb-3 mb-md-0 order-0 order-md-1">
+      <img src="bitter_lemon_750.PNG" class="img-fluid" alt="bitter_lemon_750" />
+    </div>
+  </div>
+</section>
+<section class="container py-5">
+    <!-- Row 1 me tekst pak më poshtë -->
+    <div class="row mb-4">
+      <div class="col-md-5 mb-3 mb-md-0">
+        <img src="soda_water.PNG" class="img-fluid" alt="soda_water" />
+      </div>
+      <div class="col-md-7 d-flex flex-column  align-items-center">
+        <p class="mb-0" style="margin-top: 0px;">
+          <h3>Schweppes Soda Water 330ml</h3>
+          Schweppes është brandi ikonë ndërkombëtare për ujërat tonike. Zbuloni Soda Water
+        </p>
+        <button class="btn btn-outline-dark toggle-btn mt-0" type="button">Shiko faktet ushqyese ▼</button>
+        <div class="nutrition-box">
+          <h5>Vlera Ushqimore</h5>
+          <table>
+            <thead>
+              <tr><th>Formatet</th><th>per 100 ml</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Vlera energjike</td><td>100 kJ / 0 kcal</td></tr>
+              <tr><td>Yndyrna</td><td>0 g</td></tr>
+              <tr><td>Yndyrna të ngopura</td><td>0 g</td></tr>
+              <tr><td>Karbohidrate</td><td>0 g</td></tr>
+              <tr><td>Sheqerna</td><td>0 g</td></tr>
+              <tr><td>Kripë</td><td>0.01 g</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top: 0px; margin-bottom: 0px;"><strong>Përbërësit:</strong>  ujë, dioksid karboni, bikarbonat natriumi. Vlera energjike për 330 ml: 330 kj / 0 kcal </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="currentYear"></span> SThe Coca-Cola Company. Të gjitha të drejtat të rezervuara.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+      button.addEventListener('click', function () {
+        const box = this.nextElementSibling;
+        const isVisible = box.style.display === 'block';
+        box.style.display = isVisible ? 'none' : 'block';
+        this.innerHTML = isVisible ? 'Shiko faktet ushqyese ▼' : 'Mbyll faktet ushqyese ▲';
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const yearSpan = document.getElementById("currentYear");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+</body>
+</html>
